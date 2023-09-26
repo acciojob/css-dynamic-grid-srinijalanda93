@@ -1,1 +1,27 @@
-/*  your css code here. If applicable */
+/* Apply CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create flexible columns */
+    gap: 10px; /* Adjust the gap between grid items as needed */
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Style the grid items (cards) */
+.grid-item {
+    background-color: lightgray;
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    font-size: 40px;
+}
+
